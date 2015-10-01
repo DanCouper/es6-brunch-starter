@@ -13,6 +13,10 @@
     "plato": "plato -d coverage/plato public/app.js",
     "test": "npm run istanbul && npm run coveralls"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanCouper/es6-brunch-starter"
+  },
   "keywords": [
     "es6",
     "es2015",
