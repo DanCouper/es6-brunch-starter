@@ -26,5 +26,6 @@ node_modules
 # the repo token needs to be specified, but should NOT be committed publicly.
 .coveralls.yml
 
-#generated source
-dist/
+# Generated source
+# Uncomment to ignore
+# public/

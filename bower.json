@@ -1,0 +1,16 @@
+{
+  "name": "elixir_friends",
+  "version": "0.0.0",
+  "homepage": "https://github.com/DanCouper/elixir_friends",
+  "authors": [
+    "DanCouper <danielcouper@sutor-design.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

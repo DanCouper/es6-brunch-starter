@@ -1,28 +1,30 @@
 ES6 Module Starter
 
-Boilerplate for ES6 modules, using Babel.
+Boilerplate for ES6-based [Brunch](http://brunch.io/) app frontends. Brunch is used as the frontend build tool for [Phoenix](http://www.phoenixframework.org/); personal intended use is as a prototyping/isolated construction tool to quickly test Phoenix frontends.
 
-[![Build Status](https://semaphoreci.com/api/v1/projects/03a7edf4-865a-4df0-9244-3a6aa12f2cea/533329/badge.svg)](https://semaphoreci.com/dancouper/es6-module-starter)
+Brunch has a set of conventions that attempt to simplify the build process, and in theory should allow almost zero config.
 
-[![Coverage Status](https://coveralls.io/repos/DanCouper/es6-module-starter/badge.svg?branch=master&service=github)](https://coveralls.io/github/DanCouper/es6-module-starter?branch=master)
+In addition to the core Brunch structure & plugins, a set of testing/analysis tools have been included (ESLint, Tape, Coveralls, Plato).
 
 ## Prior Art
 
-Based on a clone of https://github.com/vinniegarcia/es6-module-starter; I use [Semaphore](https://semaphoreci.com) for continuous integration (so no `.travis.yml`/similar).
+Based on a my https://github.com/DanCouper/es6-module-starter.
 
 ## Usage
 
 0. Install node and npm.
-1. Clone this repo: `git clone https://github.com/DanCouper/es6-module-starter`.
-2. Install dependencies: `npm i`.
-3. Edit info in `package.json`.
-4. Reinitialize git, commit, then `hub create && git push origin master`.
-5. Add the repo to your Coveralls account, then rename `coveralls.example.yml` to `coveralls.yml` and fill in the Coveralls repo key.
-6. Add the repo to your Semaphore account: use `npm run tape` rather than `npm test`: `npm test` runs the tests + code coverage, and the fact the `coveralls.yml` file is .gitignored means they will all fail.
-7. Hack away!
+1. Install [Bower](http://bower.io/) if you wish: Brunch is working on better NPM integration, but works out-of-the-box with Bower, making things very easy.
+2. Clone this repo: `git clone https://github.com/DanCouper/es6-module-starter`.
+3. Install dependencies: `npm i`.
+4. Edit info in `package.json`.
+5. Reinitialize git, commit, then `hub create && git push origin master`.
+6. Add the repo to your Coveralls account, then rename `coveralls.example.yml` to `coveralls.yml` and fill in the Coveralls repo key.
+7. Add the repo to your Semaphore account: use `npm run tape` rather than `npm test`: `npm test` runs the tests + code coverage, and the fact the `coveralls.yml` file is .gitignored means they will all fail.
+8. Hack away!
 
 ## Modules used/included
 
+- [*Brunch*](http://brunch.io/) - extremely simple and nippy build tool.
 - [*babel*](https://babeljs.io) - compiles ES6 source to ES5. The `--experimental` flag is also enabled so you can use ES7 features.
 - [*tape*](https://github.com/substack/tape) and [*argg*](https://github.com/isao/argg) for simple, effective testing. A couple of good articles on tape: [Why I use Tape instead of Mocha & so should you](https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4) by Eric Elliott, and [Buckle up with Tape](https://medium.com/@MarcFly1103/buckle-up-with-tape-1bd5e9e828) by Marco Romero.
 - [*eslint*](http://eslint.org/) and *babel-eslint* to analyze your code for stylistic issues.
