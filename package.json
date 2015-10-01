@@ -1,7 +1,7 @@
 {
-  "name": "es6-module-starter",
+  "name": "es6-brunch-starter",
   "version": "0.0.1",
-  "description": "Boilerplate starter kit for ES6/Babel modules.",
+  "description": "Boilerplate starter kit for Brunch, using ES6/Babel.",
   "main": "dist/index.js",
   "scripts": {
     "build": "brunch build",
@@ -13,10 +13,6 @@
     "coveralls": "cat ./coverage/istanbul/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "plato": "plato -d coverage/plato public/app.js",
     "test": "npm run istanbul && npm run coveralls"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DanCouper/es6-module-starter"
   },
   "keywords": [
     "es6",
