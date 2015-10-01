@@ -2,7 +2,6 @@
   "name": "es6-brunch-starter",
   "version": "0.0.1",
   "description": "Boilerplate starter kit for Brunch, using ES6/Babel.",
-  "main": "dist/index.js",
   "scripts": {
     "build": "brunch build",
     "watch": "brunch watch",
